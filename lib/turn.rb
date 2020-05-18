@@ -4,11 +4,11 @@
   def display_board(array)
     puts array
   end
-  gets.input
+
   def input_to_index(input)
     input.to_i - 1
   end
-  index = input_to_index(input)
+
   def position_taken?(array, index)
      if (array[index] == " ") || (array[index] == "") || (array[index] == nil)
         return false
@@ -26,3 +26,14 @@
   def move(array, index, token = "X")
     array[index] = token
   end
+def turn(array)
+  puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+  if valid_move?(array, index)
+    move(array, index, token = "X")
+  else
+    turn(array)
+  end
+display_board(array)
+end
