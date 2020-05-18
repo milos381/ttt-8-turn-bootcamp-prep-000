@@ -2,7 +2,11 @@
   puts "Hello, user. Place your first move:"
   board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   def display_board(array)
-    puts array
+    puts "   |   |   "
+    puts "-----------"
+    puts "   |   |   "
+    puts "-----------"
+    puts "   |   |   "
   end
 
   def input_to_index(input)
