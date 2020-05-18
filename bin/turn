@@ -4,11 +4,11 @@
   def display_board(array)
     puts array
   end
-  
+
   def input_to_index(input)
     input.to_i - 1
   end
-  
+
   def position_taken?(array, index)
      if (array[index] == " ") || (array[index] == "") || (array[index] == nil)
         return false
@@ -35,5 +35,5 @@ def turn(array)
   else
     turn(array)
   end
-display_board(array)    
+display_board(array)
 end
