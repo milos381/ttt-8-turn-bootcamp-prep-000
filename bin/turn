@@ -4,7 +4,7 @@
   def display_board(array)
     puts array
   end
-  gets.input
+  input = gets.input
   def input_to_index(input)
     input.to_i - 1
   end
@@ -26,4 +26,3 @@
   def move(array, index, token = "X")
     array[index] = token
   end
-  
