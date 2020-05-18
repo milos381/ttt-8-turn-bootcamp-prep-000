@@ -4,7 +4,7 @@
   def display_board(array)
     puts array
   end
-  input = gets.input
+  input = gets.strip
   def input_to_index(input)
     input.to_i - 1
   end
